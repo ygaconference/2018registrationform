@@ -21,6 +21,126 @@
 			<link rel="stylesheet" href="./assets/css/style.css" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="./assets/css/ie/v8.css" /><![endif]-->
+
+<style>
+		.slider_container {
+				margin: 0px;
+				width: 100%;
+				height: 460px;
+				position: relative;
+				border: 2px solid;
+				border-color: #C2C2FF;
+				border-bottom-width: 2px;
+				background-color: white;
+				box-shadow: white 0 0 0px;
+		}
+
+		.slider_container div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				filter: alpha(opacity=0);
+		}
+
+		.slider_container div {
+				-webkit-animation: round 10s linear infinite;
+								animation: round 10s linear infinite;
+		}
+
+		@-webkit-keyframes round {
+				4% {
+						opacity: 1;
+						filter: alpha(opacity=100);
+						/* 0 - 1秒 淡入*/
+				}
+				20% {
+						opacity: 1;
+						filter: alpha(opacity=100);
+						/* 1- 5秒靜止*/
+				}
+				24% {
+						opacity: 0;
+						filter: alpha(opacity=0);
+						/* 5-6秒淡出*/
+				}
+		}
+		@keyframes round {
+				4% {
+						opacity: 1;
+						filter: alpha(opacity=100);
+						/* 0 - 1秒 淡入*/
+				}
+				20% {
+						opacity: 1;
+						filter: alpha(opacity=100);
+						/* 1- 5秒靜止*/
+				}
+				24% {
+						opacity: 0;
+						filter: alpha(opacity=0);
+						/* 5-6秒淡出*/
+				}
+		}
+
+
+		.slider_container div:nth-child(5) {
+				-webkit-animation-delay: 0s;
+								animation-delay: 0s;
+		}
+
+		.slider_container div:nth-child(4) {
+				-webkit-animation-delay: 2s;
+								animation-delay: 2s;
+		}
+
+		.slider_container div:nth-child(3) {
+				-webkit-animation-delay: 4s;
+								animation-delay: 4s;
+		}
+
+		.slider_container div:nth-child(2) {
+				-webkit-animation-delay: 6s;
+								animation-delay: 6s;
+		}
+
+		.slider_container div:nth-child(1) {
+				-webkit-animation-delay: 8s;
+								animation-delay: 8s;
+		}
+
+		.slider_container span {
+				color: white;
+				background: white;
+				position: absolute;
+				left: 0%;
+				top: 0px;
+				width: 100%;
+				height: 460px;
+				font-size: 0px;
+				text-align: center;
+				line-height: 0px;
+				-webkit-transform:scaleY(0);
+						-ms-transform:scaleY(0);
+								transform:scaleY(0);
+				-webkit-transition: all 2s ease-in-out;
+								transition: all 2s ease-in-out;
+		}
+
+		.slider_container:hover span {
+				width: 100%;
+				-webkit-transform:scaleY(1);
+						-ms-transform:scaleY(1);
+								transform:scaleY(1);
+		}
+
+		.slider_container:hover div {
+				-webkit-animation-play-state: paused;
+								animation-play-state: paused;
+		}
+
+	</style>
+
 	</head>
 	<body>
 	<!-- Header -->
@@ -35,6 +155,7 @@
       <li class='current'><a href="./index.html">Home</a></li>
       <li ><a href="./committees.html">Committees</a></li>
 			<li ><a href="./program.html">Program</a></li>
+			<li ><a href="./speakers.html">Speakers</a></li>
       <li ><a href="./registration.html">Registration</a></li>
 			<li ><a href="./sponsors.html">Sponsors</a></li>
   	  <li ><a href="./information.html">Information</a></li>
@@ -43,11 +164,35 @@
 				</div>
 			</div>
 
-
-	<!-- Main -->
+			<!-- Main -->
 	<div id="main" class="wrapper style1">
 		<section class="container">
 			<header class="major">
+
+
+				<div class="slider_container">
+					<div>
+						<img src="./assets/images/UM/1.png" alt="pure css3 slider" width="1195" height="455" />
+						<span class="info">UM</span>
+					</div>
+					<div>
+						<img src="./assets/images/UM/2.png" alt="pure css3 slider" width="1195" height="455" />
+						<span class="info">UM</span>
+					</div>
+					<div>
+						<img src="./assets/images/UM/3.png" alt="pure css3 slider" width="1195" height="455" />
+						<span class="info">UM</span>
+					</div>
+					<div>
+						<img src="./assets/images/UM/4.png" alt="pure css3 slider" width="1195" height="455" />
+						<span class="info">UM</span>
+					</div>
+					<div>
+						<img src="./assets/images/UM/5.png" alt="pure css3 slider" width="1195" height="455" />
+						<span class="info">UM</span>
+					</div>
+				</div> <br>
+
 
 				<h3> <font color="deepskyblue"> Introduction </font> </h3>
       <p> “2018 Joint Annual Conference of Physical Societies in Guangdong-Hong Kong-Macao Greater Bay Area”
