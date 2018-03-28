@@ -636,6 +636,7 @@
 	#footer {
 		padding: 0em 0 1em;
 		color: #fff;
+        background: #008000;
 	}
 
 		#footer .major h2 {
@@ -657,7 +658,7 @@
 		}
 
 		#footer a {
-			color: inherit;
+			color: #FFA600;
 		}
 
     li.current { font-weight: 700 }
