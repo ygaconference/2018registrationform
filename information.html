@@ -20,30 +20,85 @@
 			<link rel="stylesheet" href="./assets/css/skel.css" />
 			<link rel="stylesheet" href="./assets/css/style.css" />
 		</noscript>
+
+		<style>
+			#container{
+			    display:block;
+			    width:55%;
+			    margin:0 22.5%;
+			    border:0px solid red;
+			    padding:0em;
+			    margin-top:0em;
+			    text-align:center;
+			}
+
+			#container a{
+			     text-decoration:none;
+			     display: inline-block;
+			}
+			#container a span {
+			    display:block;
+			    width:80px;
+			    height:80px;
+			    background:#eee;
+			    color:#000;
+			    line-height:80px;
+			    padding:10px;
+			    margin:.5em;
+			}
+		</style>
+
+
+			<style>
+			ul {list-style-type: none;
+					margin-bottom: 0px;
+					padding: 0px 0px;
+					width: 100%;
+					overflow: hidden;
+					background-color: #123456;
+					border: 0px solid #666;
+					height: 48px; /* Full height */
+					position: -webkit-sticky; /* Safari */
+					position: sticky;
+					top: 0px;}
+			li {float: left; border-right: 1px solid white;}
+			li:last-child {border-right: none;}
+			li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding:12px 16px;
+					text-decoration: none;}
+
+			/* Change the link color on hover */
+			li a:hover {background-color: #805300; color: white;}
+
+			li a:hover:not(.active) {background-color: #D18800;}
+			.active {background-color: #D18800;}
+			</style>
+
+
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="./assets/css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
 	<!-- Header -->
-			<div id="header">
-				<div class="container">
-          <h1 class='logo'>2018 Joint Annual Conference of Physical Societies in <br>
-            Guangdong-Hong Kong-Macao Greater Bay Area <br> </h1>
+	<div id="header">
+			<h1 class='logo'>2018 Joint Annual Conference of Physical Societies in <br>
+				Guangdong-Hong Kong-Macao Greater Bay Area <br>
+				(粵港澳大灣區物理學會2018聯合年會) </h1>
+	</div>
 
-					<!-- Nav -->
-	<nav id="nav">
-		<ul>
-      <li ><a href="./index.html">Home</a></li>
-      <li ><a href="./committees.html">Committees</a></li>
-      <li ><a href="./program.html">Program</a></li>
-			<li ><a href="./speakers.html">Speakers</a></li>
-      <li ><a href="./registration.html">Registration</a></li>
-    	<li ><a href="./sponsors.html">Sponsors</a></li>
-  	  <li class='current'><a href="./information.html">Information</a></li>
-		</ul>
-	</nav>
-				</div>
-			</div>
-
+	<div id="container" class="clearfix">		<ul>
+			 <li> <h4> <a href="./index.html">Home</a> </h4> </li>
+			 <li> <h4> <a href="./committees.html">Committees</a> </h4> </li>
+			 <li> <h4> <a href="./program.html">Program</a> </h4> </li>
+			 <li> <h4> <a href="./speakers.html">Speakers</a> </h4> </li>
+			 <li> <h4> <a href="./registration.html">Registration</a> </h4> </li>
+			 <li> <h4> <a href="./sponsors.html">Sponsors</a> </h4> </li>
+			 <li class='current'> <h4> <a href="./information.html">Information</a> </h4> </li>
+			</ul>
+	</div>
 			<!-- Main -->
 
 			<div class="wrapper style1">
@@ -51,10 +106,10 @@
 				<h3> <font color="deepskyblue"> Accommodation options </font> </h3>
 				<p> 1. Postgraduate House S1 Hostel of the University of Macau (on first-come, first-served basis and subject to availability) <br>
 					  <P>
-					  <font color="white"> N </font> ●  <font color="white"> N </font> Single room, MOP280/night. <br>
-						<font color="white"> N </font> ●  <font color="white"> N </font> Twin room, MOP360/night/room. <br>
-            <font color="white"> N </font> ●  <font color="white"> N </font> Confirmation will be made 2 weeks after receipt of your registration. <br>
-						<font color="white"> N </font> ●  <font color="white"> N </font> Accommodation payment to be made at Postgraduate House S3 reception by participant upon check-in.
+					  <font color="white"> Y </font> ●  Single room, MOP280/night. <br>
+						<font color="white"> Y </font> ●  Twin room, MOP360/night/room. <br>
+            <font color="white"> Y </font> ●  Confirmation will be made 2 weeks after receipt of your registration. <br>
+						<font color="white"> Y </font> ●  Accommodation payment to be made at Postgraduate House S3 reception by participant upon check-in.
         <P>
 				<P> 2. Broadway Hotel, <a href="https://www.broadwaymacau.com.mo/zh-hant/" target="_blank"> Broadway </a>.  <br>
 				<p> 3. Galaxy Hotel, <a href="https://www.galaxymacau.com/zh-hant/" target="_blank"> Galaxy </a>.  <br>
@@ -72,7 +127,7 @@
 				 <h3> <font color="deepskyblue"> UM campus map </font> </h3>
 				 <p> Please refer to <a href="http://www.umac.mo/visit-us/campus-map.html" target="_blank"> Campus map </a>.
 
-				 <h3> <font color="deepskyblue"> Contact us </font> </h3>
+				 <h3> <font color="deepskyblue"> Any enquiry please contact us </font> </h3>
 				 <p> If you have any questions or any feedback regarding the conference, including the registration process, abstract submission,
 					   our conference arrangements, and our website, or etc., please feel free to contact the conference secretaries by email.
 						 We will try to answer your queries as soon as possible.
@@ -82,28 +137,21 @@
 				 <p>	Zhibing Li (Guangdong, <span><a href="mailto:stslzb@mail.sysu.edu.cn">stslzb@mail.sysu.edu.cn</a></span>), School of Physics, Sun Yat-sen University
 				 <p>	Shizhong Zhang (Hong Kong, <span><a href="mailto:shizhong@hku.hk">shizhong@hku.hk</a></span>), Department of Physics, The University of Hong Kong
 
-
-
-
 			</section>
 		</div>
 
 
 
 		<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<!-- Lists -->
-						<!-- Copyright -->
-						<div class="copyright">
-
- 						Copyright © 2018. All rights reserved. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy.
-							The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,
-							except with prior written permission of <span><a href="mailto:haifengli@umac.mo">haifengli@umac.mo</a></span>
-						<br/>Jekyll Theme by <a href="http://cloudcannon.com">Cloud Cannon</a>
-
-					</div>
+		<div id="footer">
+				<div class="copyright">
+				Copyright © 2018. All rights reserved. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy.
+				The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,
+					except with prior written permission of <span><a href="mailto:haifengli@umac.mo">haifengli@umac.mo</a></span>.
+				Jekyll Theme by <a href="http://cloudcannon.com">Cloud Cannon</a>.
 				</div>
+		</div>
+
 
 		</body>
 		</html>

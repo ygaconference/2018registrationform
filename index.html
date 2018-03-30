@@ -10,6 +10,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+
 		<!--[if lte IE 8]><script src="./assets/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="./assets/js/jquery.min.js"></script>
 		<script src="./assets/js/jquery.dropotron.min.js"></script>
@@ -22,270 +23,87 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="./assets/css/ie/v8.css" /><![endif]-->
 
-
-<style>
-		.slider_container {
-				margin: 0px;
-				width: 70%;
-				height: 470px;
-				margin-left: 15%;
-				position: relative;
-				border: 8px solid;
-				border-color: #A86E00;
-				border-bottom-width: 8px;
-				background-color: white;
-				box-shadow: white 0 0 0px;
+		<style>
+		#container{
+		    display:block;
+		    width:55%;
+		    margin:0 22.5%;
+		    border:0px solid red;
+		    padding:0em;
+		    margin-top:0em;
+		    text-align:center;
 		}
 
-		.slider_container div {
-				position: absolute;
-				top: 0;
-				left: 0;
-				opacity: 0;
-				filter: alpha(opacity=0);
+		#container a{
+		     text-decoration:none;
+		     display: inline-block;
 		}
-
-		.slider_container div {
-				-webkit-animation: round 29s linear infinite;
-								animation: round 29s linear infinite;
+		#container a span {
+		    display:block;
+		    width:80px;
+		    height:80px;
+		    background:#eee;
+		    color:#000;
+		    line-height:80px;
+		    padding:10px;
+		    margin:.5em;
 		}
-
-		@-webkit-keyframes round {
-				1% {
-						opacity: 1;
-						filter: alpha(opacity=100);
-						/* 0 - 1秒 淡入*/
-				}
-				4% {
-						opacity: 1;
-						filter: alpha(opacity=100);
-						/* 1- 5秒靜止*/
-				}
-				5% {
-						opacity: 0;
-						filter: alpha(opacity=0);
-						/* 5-6秒淡出*/
-				}
-		}
-		@keyframes round {
-				1% {
-						opacity: 1;
-						filter: alpha(opacity=100);
-						/* 0 - 1秒 淡入*/
-				}
-				4% {
-						opacity: 1;
-						filter: alpha(opacity=100);
-						/* 1- 5秒靜止*/
-				}
-			 5% {
-						opacity: 0;
-						filter: alpha(opacity=0);
-						/* 5-6秒淡出*/
-				}
-		}
-
-
-		.slider_container div:nth-child(29)
-		{-webkit-animation-delay: 0s;
-						 animation-delay: 0s;}
-
-		.slider_container div:nth-child(28)
-		{-webkit-animation-delay: 1s;
-		 				 animation-delay: 1s;}
-
-		.slider_container div:nth-child(27)
-		{-webkit-animation-delay: 2s;
-		  			 animation-delay: 2s;}
-
-		.slider_container div:nth-child(26)
-		{-webkit-animation-delay: 3s;
-						 animation-delay: 3s;}
-
-		.slider_container div:nth-child(25)
-		{-webkit-animation-delay: 4s;
-		   			 animation-delay: 4s;}
-
-		.slider_container div:nth-child(24) {
-				-webkit-animation-delay: 5s;
-								animation-delay: 5s;
-		}
-
-		.slider_container div:nth-child(23) {
-				-webkit-animation-delay: 6s;
-								animation-delay: 6s;
-		}
-
-		.slider_container div:nth-child(22) {
-				-webkit-animation-delay: 7s;
-								animation-delay: 7s;
-		}
-
-		.slider_container div:nth-child(21) {
-				-webkit-animation-delay: 8s;
-								animation-delay: 8s;
-		}
-
-		.slider_container div:nth-child(20) {
-				-webkit-animation-delay: 9s;
-								animation-delay: 9s;
-		}
-
-		.slider_container div:nth-child(19) {
-				-webkit-animation-delay: 10s;
-								animation-delay: 10s;
-		}
-
-		.slider_container div:nth-child(18) {
-				-webkit-animation-delay: 11s;
-								animation-delay: 11s;
-		}
-
-		.slider_container div:nth-child(17) {
-				-webkit-animation-delay: 12s;
-								animation-delay: 12s;
-		}
-
-		.slider_container div:nth-child(16) {
-				-webkit-animation-delay: 13s;
-								animation-delay: 13s;
-		}
-
-		.slider_container div:nth-child(15) {
-				-webkit-animation-delay: 14s;
-								animation-delay: 14s;
-		}
-
-		.slider_container div:nth-child(14) {
-				-webkit-animation-delay: 15s;
-								animation-delay: 15s;
-		}
-
-		.slider_container div:nth-child(13) {
-				-webkit-animation-delay: 16s;
-								animation-delay: 16s;
-		}
-
-		.slider_container div:nth-child(12) {
-				-webkit-animation-delay: 17s;
-								animation-delay: 17s;
-		}
-
-		.slider_container div:nth-child(11) {
-				-webkit-animation-delay: 18s;
-								animation-delay: 18s;
-		}
-
-		.slider_container div:nth-child(10) {
-				-webkit-animation-delay: 19s;
-								animation-delay: 19s;
-		}
-
-		.slider_container div:nth-child(9) {
-				-webkit-animation-delay: 20s;
-								animation-delay: 20s;
-		}
-
-		.slider_container div:nth-child(8) {
-				-webkit-animation-delay: 21s;
-								animation-delay: 21s;
-		}
-
-		.slider_container div:nth-child(7) {
-				-webkit-animation-delay: 22s;
-								animation-delay: 22s;
-		}
-
-		.slider_container div:nth-child(6) {
-				-webkit-animation-delay: 23s;
-								animation-delay: 23s;
-		}
-
-		.slider_container div:nth-child(5) {
-				-webkit-animation-delay: 24s;
-								animation-delay: 24s;
-		}
-
-		.slider_container div:nth-child(4) {
-				-webkit-animation-delay: 25s;
-								animation-delay: 25s;
-		}
-
-		.slider_container div:nth-child(3) {
-				-webkit-animation-delay: 26s;
-								animation-delay: 26s;
-		}
-
-		.slider_container div:nth-child(2) {
-				-webkit-animation-delay: 27s;
-								animation-delay: 27s;
-		}
-
-		.slider_container div:nth-child(1) {
-				-webkit-animation-delay: 28s;
-								animation-delay: 28s;
-		}
-
-		.slider_container span {
-	    color: red;
-	    background: white;
-	    position: absolute;
-	    left: 30%;
-	    top: 403px;
-	    width: 5px;
-	    height: 50px;
-	    font-size: 30px;
-	    text-align: center;
-	    line-height: 50px;
-	    -webkit-transform:scaleY(0);
-	        -ms-transform:scaleY(0);
-	            transform:scaleY(0);
-	    -webkit-transition: all 0.5s ease-in-out;
-	            transition: all 0.5s ease-in-out;
-	}
-
-	.slider_container:hover span {
-	    width: 38%;
-	    -webkit-transform:scaleY(1);
-	        -ms-transform:scaleY(1);
-	            transform:scaleY(1);
-	}
-
-		.slider_container:hover div {
-				-webkit-animation-play-state: paused;
-								animation-play-state: paused;
-		}
-
 	</style>
+
+
+		<style>
+		ul {list-style-type: none;
+				margin-bottom: 0px;
+				padding: 0px 0px;
+				width: 100%;
+				overflow: hidden;
+				background-color: #123456;
+				border: 0px solid #666;
+				height: 48px; /* Full height */
+				position: -webkit-sticky; /* Safari */
+				position: sticky;
+				top: 0px;}
+		li {float: left; border-right: 1px solid white;}
+		li:last-child {border-right: none;}
+		li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding:12px 16px;
+				text-decoration: none;}
+
+		/* Change the link color on hover */
+		li a:hover {background-color: #805300; color: white;}
+
+		li a:hover:not(.active) {background-color: #D18800;}
+		.active {background-color: #D18800;}
+		</style>
+
 
 	</head>
 	<body>
+
 	<!-- Header -->
 			<div id="header">
-				<div class="container">
-          <h1 class='logo'>2018 Joint Annual Conference of Physical Societies in <br>
-            Guangdong-Hong Kong-Macao Greater Bay Area <br> </h1>
-
-					<!-- Nav -->
-	<nav id="nav">
-		<ul>
-      <li class='current'><a href="./index.html">Home</a></li>
-      <li ><a href="./committees.html">Committees</a></li>
-			<li ><a href="./program.html">Program</a></li>
-			<li ><a href="./speakers.html">Speakers</a></li>
-      <li ><a href="./registration.html">Registration</a></li>
-			<li ><a href="./sponsors.html">Sponsors</a></li>
-  	  <li ><a href="./information.html">Information</a></li>
-		</ul>
-	</nav>
-				</div>
+			    <h1 class='logo'>2018 Joint Annual Conference of Physical Societies in <br>
+            Guangdong-Hong Kong-Macao Greater Bay Area <br>
+					  (粵港澳大灣區物理學會2018聯合年會) </h1>
 			</div>
+
+  <div id="container" class="clearfix">		<ul>
+				<li class='current'> <h4> <a href="./index.html">Home</a> </h4> </li>
+				<li> <h4> <a href="./committees.html">Committees</a> </h4> </li>
+				<li> <h4> <a href="./program.html">Program</a> </h4> </li>
+				<li> <h4> <a href="./speakers.html">Speakers</a> </h4> </li>
+				<li> <h4> <a href="./registration.html">Registration</a> </h4> </li>
+				<li> <h4> <a href="./sponsors.html">Sponsors</a> </h4> </li>
+				<li> <h4> <a href="./information.html">Information</a> </h4> </li>
+    </ul>
+	</div>
 
 			<!-- Main -->
 	<div id="main" class="wrapper style1">
 		<section class="container">
-			<header class="major">
-
 
 				<div class="slider_container">
           <div>
@@ -437,7 +255,7 @@
 
 			<h3> <font color="deepskyblue"> Introduction </font> </h3>
       <p> “2018 Joint Annual Conference of Physical Societies in Guangdong-Hong Kong-Macao Greater Bay Area”
-				will take place at the University of Macau from July 26 to 29, 2018.
+				(粵港澳大灣區物理學會2018聯合年會) will take place at the University of Macau from July 26 to 29, 2018.
 				This is the first time for the University of Macau and the Physical Societies in Macao SAR, Hong Kong SAR and
 				Guangdong to jointly organize this annual conference. </p>
 			<p> This joint annual conference aims to gather researchers in all fields of physics as well as related
@@ -448,26 +266,129 @@
       <p> During the conference, participants will be encouraged to share their new research findings, novel
 				ideas and recent advances via presentation and/or poster as well as discussion. </p>
 
-				<h3> <font color="deepskyblue"> Conference themes </font> </h3>
-			<p> ●  <font color="white"> N </font> Astrophysics and Astronomy
-			<p> ●  <font color="white"> N </font> Atomic, Molecular and Optical Physics
-			<p> ●  <font color="white"> N </font> Biophysics and Soft Matter
-			<p> ●  <font color="white"> N </font> Condensed Matter Physics
-			<p> ●  <font color="white"> N </font> Interdisciplinary Physics
-			<p> ●  <font color="white"> N </font> Materials Physics and Engineering
-			<p> ●  <font color="white"> N </font> Scattering, Particle, Nuclear and Plasma Physics
-			<p> ●  <font color="white"> N </font> Physics Education
-			<p> ●  <font color="white"> N </font> Quantum Physics (Quantum Information, Computation and Simulation)
-			<p> ●  <font color="white"> N </font> Statistical Physics <p>
+
+
+<table width=100%>
+
+	<tr ALIGN=LEFT VALIGN=MIDDLE>
+			<th width=70% VALIGN=MIDDLE height="28px" bgcolor="#1693CB">
+			<span VALIGN=MIDDLE style="color:#FFFFFF; font-size:1.5em;"> Conference themes </span>
+		  </th>
+			<td width=30% bgcolor="#1693CB">
+			<span style="color:#FFFFFF;font-size:1.5em;">Responsible</span>
+			</td>
+	</tr>
+
+	<tr>
+			<td align="left" valign="top">
+		  <span>  ●   Astrophysics and Astronomy </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●   Kwing Lam Chan (<a href="mailto:klchan@must.edu.mo">klchan@must.edu.mo</a>) <br> <font color="white"> 1 </font> Tao Cai (<a href="mailto:tcai@must.edu.mo">tcai@must.edu.mo</a>) </span>
+		  </td>
+	</tr>
+
+	<tr>
+			<td align="left" valign="top">
+			<span> ●   Atomic, Molecular and Optical Physics </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●    Guichuang Xing (<a href="mailto:gcxing@umac.mo">gcxing@umac.mo</a>)   </span>
+			</td>
+	</tr>
+
+	<tr>
+			<td align="left" valign="top">
+			<span> ●   Biophysics and Soft Matter </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●   De-Fang Ouyang (<a href="mailto:DefangOuyang@umac.mo">DefangOuyang@umac.mo</a>) <br> <font color="white"> 1 </font> Xuanjun Zhang (<a href="mailto:XuanjunZhang@umac.mo">XuanjunZhang@umac.mo</a>)
+				</span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span> ●   Condensed Matter Physics </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●  Daoxin Yao (<a href="mailto:yaodaox@mail.sysu.edu.cn">yaodaox@mail.sysu.edu.cn</a>) <br> <font color="#dddddd"> 1 </font> Haifeng Li (<a href="mailto:haifengli@umac.mo">haifengli@umac.mo</a>)
+				</span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span> ●   Interdisciplinary Physics </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●  Hui Pan (<a href="mailto:huipan@umac.mo">huipan@umac.mo</a>) <br> <font color="white"> 1 </font> Wenji Deng (<a href="mailto:Phwjdeng@scut.edu.cn">Phwjdeng@scut.edu.cn</a>)
+				</span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span> ● Materials Physics and Engineering </span>
+			</td>
+			<td align="left" valign="top">
+				<span>  ●   Changwen Miao, Zongjin Li <br> <font color="#dddddd"> 1 </font> Guoxing Sun (<a href="mailto:gxsun@umac.mo">gxsun@umac.mo</a>)  <br> <font color="#dddddd"> 1 </font>  Wanhuan Zhou (<a href="mailto:hannahzhou@umac.mo">hannahzhou@umac.mo</a>)
+			</span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span>  ●   Scattering, Particle, Nuclear and Plasma Physics </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●  Hui Liu (<a href="mailto:tliuhui@jnu.edu.cn">tliuhui@jnu.edu.cn</a>) <br> <font color="white"> 1 </font>  Haifeng Li (<a href="mailto:haifengli@umac.mo">haifengli@umac.mo</a>)
+			  </span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span> ●  Physics Education </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●  Biao Wang (<a href="mailto:wangbiao@mail.sysu.edu.cn">wangbiao@mail.sysu.edu.cn</a>) <br> <font color="#dddddd"> 1 </font> Bing Wei (<a href="mailto:bingwei@umac.mo">bingwei@umac.mo</a>)
+		    </span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span>  ●  Quantum Physics (Quantum Information, Computation and Simulation) </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ● Guanghui Xu (<a href="mailto:garyhu@umac.mo">garyhu@umac.mo</a>) <br> <font color="white"> 1 </font> Shiliang Zhu (<a href="mailto:slzhu@nju.edu.cn">slzhu@nju.edu.cn</a>)
+			  </span>
+			</td>
+	</tr>
+	<tr>
+			<td align="left" valign="top">
+			<span>  ●   Statistical Physics </span>
+			</td>
+			<td align="left" valign="top">
+				<span>   ●  Huashan Li (<a href="mailto:lihsh25@mail.sysu.edu.cn">lihsh25@mail.sysu.edu.cn</a>) <br> <font color="#dddddd"> 1 </font> Lihu Xu (<a href="mailto:lihuxu@umac.mo">lihuxu@umac.mo</a>)	</span>
+			</td>
+	</tr>
+				<!--
+						<tr>
+							<td>
+								<span style="font-size:16px;">* To be confirmed</span>
+							</td>
+							<td>
+							</td>
+						</tr>
+				-->
+
+				</table>
+
 
    			<h3> <font color="deepskyblue"> Important dates </font> </h3>
-		  <!--<p> ● First announcement: January 25, 2018-->
-		  <p> ● <font color="white"> N </font> Registration and submission deadline: May 15, 2018 <br>
-            <I> <font color="white"> NN </font> ✱ Late registration and submission are acceptable but will be excluded from award selection.
+		  <p> ● First announcement: January 25, 2018
+		  <p> ● Registration and submission deadline: May 15, 2018 <br>
+            <I>  <font color="white"> y </font> ✱ Late registration and submission are acceptable but will be excluded from award selection.
 						Late submission will be considered for poster presentation only. </I>
 
-			<p> ● <font color="white"> N </font> Conference check-in: July 26, 2018 (Thursday)
-		  <p> ● <font color="white"> N </font> Conference dates: July 27-29, 2018 (Friday to Sunday) </p>
+			<p> ● Conference check-in: July 26, 2018 (Thursday)
+		  <p> ● Conference dates: July 27-29, 2018 (Friday to Sunday) </p>
 
   			<h3> <font color="deepskyblue"> Conference venue </font> </h3>
 		  <p> Anthony Lau Building (E4), University of Macau, Avenida da Universidade, Taipa, Macao, China. </p>
@@ -482,21 +403,18 @@
 	</div>
 
 
-<!-- Footer -->
-		<div id="footer">
-			<div class="container">
-				<!-- Lists -->
-				<!-- Copyright -->
-				<div class="copyright">
+	<!-- Footer -->
+	<div id="footer">
 
-
-				Copyright © 2018. All rights reserved. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy.
-					The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,
-					except with prior written permission of <span><a href="mailto:haifengli@umac.mo">haifengli@umac.mo</a></span>
-				<br/>Jekyll Theme by <a href="http://cloudcannon.com">Cloud Cannon</a>
-
+			<div class="copyright">
+			Copyright © 2018. All rights reserved. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy.
+			The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,
+				except with prior written permission of <span><a href="mailto:haifengli@umac.mo">haifengli@umac.mo</a></span>.
+			Jekyll Theme by <a href="http://cloudcannon.com">Cloud Cannon</a>.
 			</div>
-		</div>
 
-</body>
-</html>
+	</div>
+
+
+	</body>
+	</html>
