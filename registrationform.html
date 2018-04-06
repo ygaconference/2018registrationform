@@ -1,17 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" url("../css/strict.dtd")>
+
 <html>
 <head>
 <title>YGA2018 On-Line Registration/Abstract Submission</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
-<body bgcolor='#F09C00' url("../images/BK1.png") no-repeat;
->
+<body bgcolor='#F09C00'>
 
-<table width='100%'>
+
 	<tr>
 		<td colspan=3 width='100%'><table bgcolor='#008080' width='100%'>
 	<tr>
-		<td colspan=3 width='100%'><table bgcolor='#ff99ff' width='100%'>
+		<td colspan=3 width='100%'><table bgcolor='white' width='100%'>
 
 	<tr>
 		<td bgcolor='#123456'>
@@ -22,14 +22,23 @@
 		</td>
 	</tr>
 
-</table><center></td></tr><tr><td width=0% valign=top></td><td bgcolor="#E8FFFF"><table bgcolor="#E8FFFF" width='100%' border='1'>
+</table>
+<center>
+</td>
+</tr>
+
 <tr>
-	<td><br><center><font size=5>YGA2018 Online Registration/Abstract Submission</font></center>
+	<td width=0% valign=top></td><td bgcolor="#E8FFFF"><table bgcolor="#E8FFFF" width='100%' border='1'>
+<tr>
+<td> <br> <center> <font size=5> YGA2018 Online Registration/Abstract Submission </font> </center>
 <br>
 <p>
 
-<table width=110%>
-<form enctype="multipart/form-data"method="post" action="submit_new.php">
+<table width=100%>
+<form enctype="multipart/form-data" target="_self"  method="post" action=URL("https://ygaconference.github.io/2018registrationform/registrationform.html")>
+	<form action="/action_page.php">
+		<fieldset>
+    <legend>YGA2018 Online Registration/Abstract Submission</legend>
 
 <tr>
 <td colspan='2'>
@@ -43,7 +52,7 @@
 
 <tr>
 <td colspan='2'>
-<center><textarea name="title" value="" rows=3 cols=80>
+<center><textarea name="Title of the abstract:" value="" rows=3 cols=80>
 </textarea></center>
 </td>
 </tr>
@@ -83,7 +92,7 @@
 <td width=35% align=right>First Name:
 </td>
 <td>
-<input type=text name="First Name" value="" size=50>
+<input type=text name="First Name:" value="" size=50>
 </td>
 </tr>
 
@@ -91,7 +100,7 @@
 <td width=35% align=right>Family Name:
 </td>
 <td>
-<input type=text name="Family Name" value="" size=50>
+<input type=text name="Family Name:" value="" size=50>
 </td>
 </tr>
 
@@ -99,7 +108,7 @@
 <td width=35% align=right>Organization/Institution:
 </td>
 <td>
-<input type=text name="Organization/Institution" value="" size=50>
+<input type=text name="Organization/Institution:" value="" size=50>
 </td>
 </tr>
 
@@ -107,7 +116,7 @@
 <td width=35% align=right>Address:
 </td>
 <td>
-<input type=text name="Address" value="" size=50>
+<input type=text name="Address:" value="" size=50>
 </td>
 </tr>
 
@@ -115,7 +124,7 @@
 <td width=35% align=right>Country:
 </td>
 <td>
-<input type=text name="Country" value="" size=50>
+<input type=text name="Country:" value="" size=50>
 </td>
 </tr>
 
@@ -123,7 +132,7 @@
 <td width=35% align=right>Contact number:
 </td>
 <td>
-<input type=text name="Contact Number" value="" size=50>
+<input type=text name="Contact Number:" value="" size=50>
 </td>
 </tr>
 
@@ -131,7 +140,7 @@
 <td width=35% align=right>Email address:
 </td>
 <td>
-<input type=text name="Email address" value="" size=50>
+<input type=text name="Email address:" value="" size=50>
 </td>
 </tr>
 
@@ -202,7 +211,7 @@ function ptype_d(){
 <tr>
 <td>&nbsp;
 </td>
-<td>Topic:&nbsp;&nbsp;<select name='topic'><option value=''>Please select topic <option value='1'>
+<td>Topic:&nbsp;&nbsp;<select name='Topic:'><option value=''>Please select topic <option value='1'>
 	1:&nbsp; Astrophysics and Astronomy <option value='2'>
 	2:&nbsp; Atomic, Molecular and Optical Physics <option value='3'>
 	3:&nbsp; Biophysics and Soft Matter <option value='4'>
@@ -273,7 +282,7 @@ function ptype_d(){
 	<tr>
   <td width=30% align=center>
 	</td>
-	<td>Check-in:&nbsp;&nbsp;<select name='topic'><option value=''>Please select date <option value='1'>
+	<td>Check-in:&nbsp;&nbsp;<select name='date in'><option value=''>Please select date <option value='1'>
 		1:&nbsp; July 26 <option value='2'>
 		2:&nbsp; July 27 <option value='3'>
 		3:&nbsp; July 28 <option value='4'>
@@ -284,7 +293,7 @@ function ptype_d(){
 	<tr>
 	<td width=30% align=center>
 	</td>
-	<td>Check-out:&nbsp;&nbsp;<select name='topic'><option value=''>Please select date <option value='1'>
+	<td>Check-out:&nbsp;&nbsp;<select name='date out'><option value=''>Please select date <option value='1'>
 		1:&nbsp; July 26 <option value='2'>
 		2:&nbsp; July 27 <option value='3'>
 		3:&nbsp; July 28 <option value='4'>
@@ -295,7 +304,7 @@ function ptype_d(){
 	<tr>
 	<td width=30% align=center>
 	</td>
-	<td> No. of nights:&nbsp;&nbsp;<select name='topic'><option value=''>Please select number <option value='1'>
+	<td> No. of nights:&nbsp;&nbsp;<select name='number of nights'><option value=''>Please select number <option value='1'>
 		1:&nbsp; 1 day <option value='2'>
 		2:&nbsp; 2 days <option value='3'>
 		3:&nbsp; 3 days <option value='4'>
@@ -316,9 +325,9 @@ function ptype_d(){
 <tr>
 <td width=30% align=center>
 </td>
-<td> You are a:&nbsp;&nbsp;<select name='topic'><option value=''> <option value='1'>
-	1:&nbsp; Male <option value='2'>
-	2:&nbsp; Female <option value='3'>
+<td> Gender:&nbsp;&nbsp;<select name='Gender:'><option value=''> <option value='1'>
+	1:&nbsp; Female <option value='2'>
+	2:&nbsp; Male <option value='3'>
 </select>
 </td>
 </tr>
@@ -326,9 +335,9 @@ function ptype_d(){
 <tr>
 <td width=30% align=center>
 </td>
-<td> You:&nbsp;&nbsp;<select name='topic'><option value=''> <option value='1'>
-	1:&nbsp; would like to share the twin room with another participant at organizer’s discretion.	 <option value='2'>
-	2:&nbsp; would not like to share the twin room with another participant at organizer’s discretion. <option value='3'>
+<td> others:&nbsp;&nbsp;<select name='Others:'><option value=''> <option value='1'>
+	1:&nbsp; You would like to share the twin room with another participant at organizer’s discretion.	 <option value='2'>
+	2:&nbsp; You would not like to share the twin room with another participant at organizer’s discretion. <option value='3'>
 </select>
 </td>
 </tr>
@@ -340,7 +349,7 @@ function ptype_d(){
 	<tr>
   <td width=30% align=center>
 	</td>
-	<td>Hotels:&nbsp;&nbsp;<select name='topic'><option value=''> <option value='1'>
+	<td>Hotels:&nbsp;&nbsp;<select name='Other hotels:'><option value=''> <option value='1'>
 		1:&nbsp; Broadway Hotel <option value='2'>
 		2:&nbsp; Galaxy Hotel <option value='3'>
 		3:&nbsp; Sheraton Grand Macao Hotel, Cotai Central <option value='4'>
@@ -354,7 +363,7 @@ function ptype_d(){
 <td width=35% align=right>Your ID number:
 </td>
 <td>
-<input align=right type=text name="ID" value="" size=50>
+<input align=right type=text name="ID number" value="" size=50>
 </td>
 </tr>
 
@@ -590,15 +599,36 @@ function fullpaper(form) {
 <td colspan=2>&nbsp;
 </td>
 </tr>
+
 <tr>
 <td colspan=2><center><input type=submit name='finish' value='Finish the submission' size='6' language="javascript"
-		  	onclick="return paper(this.form)"></tr></tr></table></form></td></tr></table></td><td width=5% bgcolor="#008080">
-				</td></tr><tr><td colspan=3>&nbsp;&nbsp;&nbsp;</td></tr><tr><td></td><td align=center>|&nbsp;<a href='https://ygaconference.github.io/2018/index.html'
-					target="_blank">Conference&nbsp;home</a>&nbsp;|&nbsp;<a href="mailto:haifengli@umac.mo">Contact&nbsp;us&nbsp;</a>|
-<br>&nbsp;
-<p>
-<font size=3 color='#800000'>Copyright &copy; YGA2018 Committee, All rights reserved.
-</font></td>
-<td></td>
-</tr>
-</table></center></body></html>
+		  	onclick="return paper(this.form)">
+</table>
+</table>
+</table>
+
+
+
+
+<!-- Footer -->
+<div id="footer">
+
+		<div class="copyright"> <center>
+			<tr>
+				<td align=center bgcolor="#7900D1">
+
+				<a href='https://ygaconference.github.io/2018/index.html'
+				target="_blank"><font size=3 color='white'>| Conference home </font></a>
+
+				<a href="mailto:haifengli@umac.mo"> <font size=3 color='white'> | Contact us |</font> </a>
+
+			<p>
+			<font size=3 color='white'>Copyright &copy; YGA2018 Committee, All rights reserved. </font> </p>
+		</td>
+		</tr>
+
+		</div>
+
+
+</fieldset> </form>
+</body></html>
